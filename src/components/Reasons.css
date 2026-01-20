@@ -1,0 +1,83 @@
+.reasons {
+  background: #000;
+  padding: 70px 5%;
+  color: white;
+  font-family: "Netflix Sans", Arial, Helvetica, sans-serif;
+}
+
+.reasons h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 32px;
+}
+
+/* GRID */
+.reasons-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+/* CARD */
+.reason-card {
+  position: relative;
+  background: linear-gradient(135deg, #1a1f3a, #210e2f);
+  padding: 28px;
+  border-radius: 16px;
+  min-height: 250px;
+  overflow: hidden;
+}
+
+.reason-card h3 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.reason-card p {
+  font-size: 1rem;
+  line-height: 1.4;
+  color: #d1d1d1;
+  max-width: 90%;
+}
+
+/* ICONS (BOTTOM RIGHT LIKE NETFLIX) */
+.icon {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  width: 48px;
+  height: 48px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/* Individual icons */
+.icon.tv {
+  background-image: url("https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png");
+}
+
+.icon.download {
+  background-image: url("https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/download.png");
+}
+
+.icon.watch {
+  background-image: url("https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/watch.png");
+}
+
+.icon.kids {
+  background-image: url("https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/kids.png");
+}
+
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+  .reasons-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .reasons-grid {
+    grid-template-columns: 1fr;
+  }
+}

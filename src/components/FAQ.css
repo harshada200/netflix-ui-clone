@@ -1,0 +1,62 @@
+.faq {
+  background: #000;
+  padding: 70px 5%;
+  color: white;
+  font-family: "Netflix Sans", Arial, Helvetica, sans-serif;
+}
+
+.faq-container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.faq h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+/* FAQ ITEM */
+.faq-item {
+  background: #2d2d2d;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.faq-item:hover {
+  background: #3a3a3a;
+}
+
+/* QUESTION */
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 26px 24px;
+}
+
+.faq-question span:first-child {
+  font-size: 1.5rem;     /* EXACT Netflix size */
+  font-weight: 400;     /* Netflix uses regular */
+}
+
+/* PLUS ICON */
+.icon {
+  font-size: 2.6rem;
+  font-weight: 300;
+  transition: transform 0.25s ease;
+}
+
+/* ROTATE TO X */
+.faq-item.open .icon {
+  transform: rotate(45deg);
+}
+
+/* ANSWER */
+.faq-answer {
+  padding: 0 24px 24px;
+  font-size: 1.4rem;
+  line-height: 1.4;
+  color: white;
+}

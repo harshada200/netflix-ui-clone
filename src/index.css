@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: "Netflix Sans", Arial, Helvetica, sans-serif;
+}
+
+
+
+
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .trending {
+    padding: 20px;
+  }
+
+  .movie-card img {
+    width: 140px;
+    height: 210px;
+  }
+
+  .arrow {
+    display: none;
+  }
+
+  .reasons {
+    padding: 30px;
+  }
+
+  .faq {
+    padding: 30px;
+  }
+
+  .footer {
+    padding: 30px;
+  }
+}
